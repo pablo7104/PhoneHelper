@@ -1,0 +1,137 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+body {
+  background: #fff;
+  font-family: Open Sans, sans-serif;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.wrapper .principal-board {
+  width: 399px;
+  height: 488px;
+  background-color: #419eab;
+  border-radius: 6px;
+  display: flex;
+  position: absolute;
+}
+
+.wrapper .result-board {
+  height: 606px;
+  width: 341px;
+  background: #419eab;
+  border-radius: 6px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+}
+
+.wrapper .result-board .result-card {
+  width: 313.09px;
+  height: 411.9px;
+  background: #ffe2b7;
+  border-radius: 6px;
+  box-shadow: 0 4px 4px #00000040, 0 4px 4px #00000040;
+}
+
+.wrapper .result-board .result-name {
+  width: 313.09px;
+  height: 98.18px;
+  background: #ffe2b7;
+  border-radius: 6px;
+  box-shadow: 0 4px 4px #00000040, 0 4px 4px #00000040;
+}
+
+.wrapper .question-card {
+  width: 392px;
+  height: 85px;
+  background-color: #ffe2b7;
+  border-radius: 6px;
+  margin-top: -15%;
+  margin-right: 56px;
+  position: absolute;
+  box-shadow: 0 4px 4px #00000040;
+}
+
+.wrapper .question-card .question {
+  margin-top: 11px;
+  margin-left: 26px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.wrapper .question-card section {
+  width: 296px;
+  height: 38px;
+  background-color: #ffe2b7;
+  border-radius: 6px;
+  margin-top: 11px;
+  box-shadow: 0 4px 4px #00000040;
+}
+
+.wrapper .question-card .options {
+  flex-direction: column;
+  margin-left: 100px;
+  display: flex;
+  margin-top: 76px !important;
+}
+
+.wrapper .question-card .options .txt-options {
+  justify-content: center;
+  align-items: center;
+  padding-left: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.left-case {
+  width: 105px;
+  height: 61px;
+  background-color: #419eab;
+  border-radius: 6px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  position: absolute;
+  top: 20vh;
+  left: 27%;
+}
+
+.left-case .left-arrow {
+  margin-top: 17px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.right-case {
+  width: 105px;
+  height: 61px;
+  background-color: #419eab;
+  border-radius: 6px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  position: absolute;
+  top: 20vh;
+  left: 67%;
+}
+
+.right-case .right-arrow {
+  margin-top: 17px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+/*# sourceMappingURL=index.8c1c22dc.css.map */

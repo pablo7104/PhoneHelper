@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpCel!</title>
+    <link rel="stylesheet" href="/index.8c1c22dc.css">
+    <script src="/index.18dbc454.js" defer=""></script>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <a class="left-case" href="javascript: history.go(-1)"><img class="left-arrow" src="/Arrow%201left-arrow.165f9ad1.svg" alt="back"></a>
+        
+        <a class="right-case" href="/uso.html"><img class="right-arrow" src="/Arrow%202right-arrow.4c2d1bdc.svg" alt="back"></a>
+        
+        <div class="principal-board"></div>
+        <div class="question-card">
+            <p class="question">Qual o valor que pode ser gasto?</p>
+            
+            <div class="options">
+                <span>
+                <span id="myValue"></span>
+                </span>
+                <input type="range" id="myRange" max="10000" min="1000" style="width: 80%">
+            </div>
+
+            <script type="text/javascript" charset="utf-8">var myRange = document.querySelector("#myRange");
+var myValue = document.querySelector("#myValue");
+var cifrao = "R$";
+var off = myRange.offsetWidth / (parseInt(myRange.max) - parseInt(myRange.min));
+var px = (myRange.valueAsNumber - parseInt(myRange.min)) * off - myValue.offsetParent.offsetWidth / 2;
+myValue.parentElement.style.left = px + "px";
+myValue.parentElement.style.top = myRange.offsetHeight + "px";
+myValue.innerHTML = cifrao + "" + myRange.value;
+myRange.oninput = function() {
+    let px1 = (myRange.valueAsNumber - parseInt(myRange.min)) * off - myValue.offsetWidth / 2;
+    myValue.innerHTML = cifrao + "" + myRange.value;
+    myValue.parentElement.style.left = px1 + "px";
+};
+
+</script>
+        </div>
+    </div>
+</body>
+</html>
